@@ -452,10 +452,12 @@ var spaces = (() => {
                 {
                     type: 'popup',
                     url,
-                    height: screen.height - 100,
-                    width: Math.min(screen.width, 1000),
-                    top: 0,
-                    left: 0,
+                    // height: screen.height - 100,
+                    // width: Math.min(screen.width, 1000),
+                    height: 600,
+                    width: 800,
+                    // top: 0,
+                    // left: 0,
                 },
                 window => {
                     spacesOpenWindowId = window.id;
@@ -748,10 +750,12 @@ var spaces = (() => {
             chrome.windows.create(
                 {
                     url: urls,
-                    height: screen.height - 100,
-                    width: screen.width - 100,
-                    top: 0,
-                    left: 0,
+                    // height: screen.height - 100,
+                    // width: screen.width - 100,
+                    height: 600,
+                    width: 800,
+                    // top: 0,
+                    // left: 0,
                 },
                 newWindow => {
                     // force match this new window to the session

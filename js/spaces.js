@@ -43,6 +43,8 @@
             linkEl.innerHTML = UNSAVED_SESSION;
         }
 
+			linkEl.innerHTML += ` (${space.tabs.length})`;
+
         if (
             globalSelectedSpace &&
             ((space.windowId &&
